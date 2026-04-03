@@ -10,5 +10,9 @@
     "typescript": "^5"
   },
   "workspaces": [
-    "packages/client/*"  ]
+    "packages/client/*"
+  ],
+  "dependencies": {
+    "openai": "^6.33.0"
+  }
 }
