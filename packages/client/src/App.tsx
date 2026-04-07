@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
+import { Button } from "./components/ui/button";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -14,7 +15,14 @@ function App() {
       .then((data) => setMessage(data.message));
   }, []);
 
-  return <p className="font-bold p-4 text-3xl">{message}</p>;
+  return (
+    <>
+      <div className="p-4">
+        <p className="font-bold text-3xl">{message}</p>
+        <Button>Click me</Button>
+      </div>
+    </>
+  );
 }
 
 export default App;
