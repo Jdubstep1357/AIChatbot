@@ -23,6 +23,7 @@
     "packages/client/*"
   ],
   "dependencies": {
-    "openai": "^6.33.0"
+    "openai": "^6.33.0",
+    "zod": "^4.3.6"
   }
 }
